@@ -1,3 +1,4 @@
+
 //Phase 1
 //create function declaration
 //refactor 
@@ -31,9 +32,21 @@ console.log(calculateStoreTax(100));
 function applyDiscount(total, discountCallback){
     return discountCallback(total);
 }
+
 //create two separate functions
 const studentDiscount = total => total * 0.90;
 const seniorDiscount = total => total * 0.80;
 //console functions and pass through values
 console.log(applyDiscount(100, studentDiscount))
 console.log(applyDiscount(100, seniorDiscount))
+
+//Phase 5
+//create function and pass through parameters 
+function calculateFinalBill(price, quantity, discountCallback){
+    const subtotal = calculatePrice(price, quantity);
+    const discountedPrice = applyDiscount(subtotal, discountCallback);
+    const taxAmount = getTax(discountedPrice, 0.07);
+    return discountedPrice + taxAmount;
+}
+//call function 
+console.log("Your grand total is: " + calculateFinalBill(20, 3, studentDiscount));

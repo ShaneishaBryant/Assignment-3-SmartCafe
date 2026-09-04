@@ -21,3 +21,10 @@ Arrow functions omit the function keyword and use the "fat arrow" syntax. Becaus
 Why is applyDiscount considered a “Higher-Order Function”? What role did studentDiscount and seniorDiscount play? What function would you have to write if you wanted to apply no discount?
 
 Because it calls the discountCallback function as a parameter. studentDiscount and seniorDiscount were pass-through functions. If you wanted to apply no discount you would write a fallback function that applied the total and returned an unchanged value. 
+
+
+
+
+How did breaking the order process into small, single-purpose functions make writing calculateFinalBill easier than putting all the math into one long block of code?
+
+Composing the final function step-by-step made it much easier to understand the logic and see how all the pieces fit together. Breaking a complex problem into smaller, manageable steps helps structure my approach, and I definitely prefer this method when coding (and completing assignments). 
