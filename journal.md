@@ -8,3 +8,9 @@ The calculatePrice function works as a standalone statement and begins with the 
 What happened when you tried to log defaultTaxRate outside the function? Why did that occur?
 
 I received an Uncaught ReferenceError: defaultTaxRate is not defined. This occurs because defaultTaxRate is locally scoped within the calculateStoreTax function. As a result, it only exists while the function is executing and cannot be accessed outside its block.
+
+
+
+Describe how arrow function syntax differs from standard function expressions. Did concise implicit returns make your code easier or harder to read?
+
+Arrow functions omit the function keyword and use the "fat arrow" syntax. Because the function consists of a single expression, we can drop both the curly braces and the return keyword. This implicit return created a quick, readable one-line function.

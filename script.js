@@ -1,12 +1,12 @@
 //Phase 1
 //create function declaration
-function calculatePrice(price, quantity){
-    return price * quantity; 
-}
+//refactor 
+const calculatePrice = (price, quantity) => price * quantity; 
+
 //create function expression
-let getTax = function(amount, taxRate){
-    return amount * taxRate;
-};
+//refactor 
+const getTax = (amount, taxRate) => amount * taxRate;
+
 //call functions
 let subtotal = calculatePrice(15, 4);
 let tax = getTax(subtotal, 0.07);
@@ -23,3 +23,5 @@ function calculateStoreTax(amount){
 //call function and pass value
 console.log(calculateStoreTax(100));
 //console.log(defaultTaxRate);
+
+//Phase 3 - refactor 
