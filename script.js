@@ -25,3 +25,15 @@ console.log(calculateStoreTax(100));
 //console.log(defaultTaxRate);
 
 //Phase 3 - refactor 
+
+//Phase 4 
+//create function and return results 
+function applyDiscount(total, discountCallback){
+    return discountCallback(total);
+}
+//create two separate functions
+const studentDiscount = total => total * 0.90;
+const seniorDiscount = total => total * 0.80;
+//console functions and pass through values
+console.log(applyDiscount(100, studentDiscount))
+console.log(applyDiscount(100, seniorDiscount))

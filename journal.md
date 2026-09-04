@@ -14,3 +14,10 @@ I received an Uncaught ReferenceError: defaultTaxRate is not defined. This occur
 Describe how arrow function syntax differs from standard function expressions. Did concise implicit returns make your code easier or harder to read?
 
 Arrow functions omit the function keyword and use the "fat arrow" syntax. Because the function consists of a single expression, we can drop both the curly braces and the return keyword. This implicit return created a quick, readable one-line function.
+
+
+
+
+Why is applyDiscount considered a “Higher-Order Function”? What role did studentDiscount and seniorDiscount play? What function would you have to write if you wanted to apply no discount?
+
+Because it calls the discountCallback function as a parameter. studentDiscount and seniorDiscount were pass-through functions. If you wanted to apply no discount you would write a fallback function that applied the total and returned an unchanged value. 
